@@ -57,12 +57,17 @@ Metin çıkarma ──► Temizleme ──► 1200 karakterlik parçalara bölme
 2. **Model dosyasını ekleyin.** Model yaklaşık 400 MB olduğu için GitHub'da tutulmuyor. `soru_model_q4_k_m.gguf` dosyasını `SoruUreticiMobile/` klasörüne koyun ve uygulama hedefine (target) dahil olduğundan emin olun.
 3. Signing ayarlarında kendi geliştirici hesabınızı (Team) seçin ve uygulamayı çalıştırın.
 
+## Model Eğitimi
+
+Modeli eğitmek için **4.315 örnekli Türkçe bir soru-cevap veri seti** hazırladım ve kalite kontrolünden geçirdim. Temizlik sonrası 4.180 örnek kaldı. Ardından Llama 3 8B modelini Unsloth ile LoRA kullanarak ince ayarladım. Veri seti, temizleme script'i ve eğitim kodu [`training/`](training/) klasöründe.
+
 ## Proje Yapısı
 
 | Dosya | Görevi |
 | --- | --- |
 | `SoruUreticiMobileApp.swift` | Uygulamanın giriş noktası |
 | `ContentView.swift` | Arayüz, metin çıkarma, model çağrısı, JSON ayrıştırma, doğrulama ve PDF üretimi |
+| `training/` | Veri seti, veri temizleme ve LoRA eğitim kodu |
 
 ## Sonraki Adımlar
 
