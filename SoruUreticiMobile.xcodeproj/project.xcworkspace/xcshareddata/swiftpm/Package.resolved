@@ -1,0 +1,24 @@
+{
+  "originHash" : "6f6d7888efb766688c6748f71f1678a08fdb74b874237fbfbf1d3fdb06c028c2",
+  "pins" : [
+    {
+      "identity" : "swift-llama-cpp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pgorzelany/swift-llama-cpp",
+      "state" : {
+        "revision" : "5496bc7c9820f04bba7268dc8a271235deae436d",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "zipfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/weichsel/ZIPFoundation",
+      "state" : {
+        "revision" : "22787ffb59de99e5dc1fbfe80b19c97a904ad48d",
+        "version" : "0.9.20"
+      }
+    }
+  ],
+  "version" : 3
+}

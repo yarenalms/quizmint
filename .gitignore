@@ -1,0 +1,16 @@
+# Model dosyaları (GitHub'ın 100 MB sınırını aşar; README'deki adımlarla ayrıca eklenir)
+*.gguf
+*.bin
+*.safetensors
+
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+build/
+
+# Swift Package Manager
+.build/
